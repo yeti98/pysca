@@ -453,7 +453,7 @@ class Packet(bytes):
                 Raise the appropriate exception according to the error sent by the camera.
                 If this packet does not represent an error, return the packet itself
                 """
-                print self.type, self.title()
+                # print self.type, self.title()
                 if self.type == VISCA_RESPONSE_ERROR:
                         try:
                                 # raise Packet.__error_map[self.category](self)
